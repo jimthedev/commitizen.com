@@ -1,0 +1,31 @@
+{
+  "name": "commitizen.com",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "next",
+    "start": "next start",
+    "build": "next build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jimthedev/commitizen.com.git"
+  },
+  "keywords": [],
+  "author": "Jim Cummins <jimthedev@gmail.com> (http://github.com/jimthedev)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jimthedev/commitizen.com/issues"
+  },
+  "homepage": "https://github.com/jimthedev/commitizen.com#readme",
+  "dependencies": {
+    "next": "^5.1.0",
+    "react": "^16.3.1",
+    "react-dom": "^16.3.1"
+  },
+  "now": {
+    "alias": "commitizen.com"
+  }
+}
