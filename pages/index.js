@@ -51,6 +51,7 @@ export default () => (
       html,
       body {
         background: #000;
+        font-size: 16px;
       }
     `}</style>
     <style jsx>{`
@@ -59,45 +60,74 @@ export default () => (
         margin: 0 auto 100px;
       }
       a {
-        color: rgb(0, 0, 238);
+        color: #fff;
       }
       /* AT COMMITIZEN WE WORK ON */
       .work-on {
         height: 34px;
-        width: 444px;
+        max-width: 344px;
         font-family: Rambla, sans-serif;
-        font-size: 24px;
+        font-size: 1rem;
         letter-spacing: 10px;
+        padding-left: 16px;
         color: #4f4f4f;
-      }
-      .work-on strong {
-        font-weight: 100;
+        margin-top: 40px;
+        margin-left: auto;
+        margin-right: auto;
       }
       .responsive,
       .responsible,
-      .productive {
-        width: 444px;
-
+      .productive,
+      .hear-from-you {
+        max-width: 344px;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 16px;
         font-family: Rambla, sans-serif;
-        font-size: 36px;
+        font-size: 1.6rem;
         letter-spacing: 10px;
-
         color: #f2f2f2;
       }
-      .responsible {
+      .you-know-us {
+        height: 34px;
+        max-width: 344px;
+        font-family: Rambla, sans-serif;
+        font-size: 1rem;
+        letter-spacing: 10px;
+        padding-left: 16px;
+        color: #4f4f4f;
+        margin-top: 40px;
+        margin-left: auto;
+        margin-right: auto;
       }
-      .productive {
+      @media (min-width: 500px) {
+        .work-on,
+        .you-know-us {
+          margin-top: 40px;
+          max-width: 400px;
+          font-size: 1.6rem;
+        }
+        .responsive,
+        .responsible,
+        .productive,
+        .hear-from-you {
+          max-width: 400px;
+          font-size: 2.4rem;
+        }
       }
     `}</style>
 
     <article className="who-we-are">
-      <h3 className={`work-on`}>
-        AT <strong>COMMITIZEN</strong> OUR GOALS ARE TO
-      </h3>
+      <h3 className={`work-on`}>AT COMMITIZEN</h3>
 
-      <p className={`responsible`}>EMPOWER GROUPS OF INDIVIDUALS</p>
-      <p className={`responsive`}>RESPOND TO TECHNOLOGICAL SHIFTS</p>
-      <p className={`productive`}>CREATE INCLUSIVE SOFTWARE SOLUTIONS</p>
+      <p className={`responsible`}>WE EMPOWER GROUPS OF INDIVIDUALS</p>
+      <p className={`responsive`}>TO TACKLE CHALLENGES THOUGHTFULLY</p>
+      <p className={`productive`}>BY BUILDING INCLUSIVE SOFTWARE</p>
+      <h3 className={`you-know-us`}>NOW YOU KNOW US</h3>
+      <p className={`hear-from-you`}>
+        SO <a href="mailto:commitizen@gmail.com">TELL US</a> ABOUT YOU
+      </p>
     </article>
   </div>
 );
