@@ -73,7 +73,7 @@ export default () => (
         If you feel that we are not abiding by this privacy policy, you should
         contact us immediately via telephone at{" "}
         <span style={{"textDecoration": "underline"}}>651-442-5734</span> or{" "}
-        <a href="commitizen@gmail.com">via email</a>>.
+        <a href="mailto:commitizen@gmail.com">via email</a>.
       </strong>
     </p>
   </div>
